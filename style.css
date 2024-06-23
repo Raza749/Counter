@@ -1,0 +1,145 @@
+
+/* Import font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Orbitron", sans-serif; */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --backgroundColor:rgb(149, 171, 239);
+    --textColor:#607bf1;
+    --btnBackgroundColor:#496ddb;
+    --counterBg:#929fdfbd;
+    --boxBgColor:#ffffffff;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box{
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.517);
+    height: 50%;
+    background-color:var(--boxBgColor) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .box h1{
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+    color: var(--textColor);
+    margin: 10px 0;
+}
+
+.container .box .userField{
+    border: 2px solid var(--textColor);
+    border-radius: 3px;
+}
+
+.container .box .userField #userInput{
+    padding: 12px 25px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+}
+
+.container .box .wrapper{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container .box .wrapper button{
+    padding: 12px 30px;
+    border: none;
+    outline:none;
+    border-radius: 30px;
+    color: var(--boxBgColor);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 10px;
+    background-color: var(--btnBackgroundColor);
+    cursor: pointer;
+    font-family: "Orbitron",sans-serif;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.container .box .wrapper button:hover{
+    opacity: .9;
+}
+
+.container .box .wrapper span{
+    font-size: 35px;
+    color: var(--textColor);
+    padding: 6px 40px;
+    background-color:var(--counterBg);
+    border-radius: 30px;
+    font-family: "Orbitron",sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+   .container .box{
+    height: 60%;
+    padding: 10px;
+    width: 80%;
+   }
+
+   .container .box .wrapper{
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .container .box .wrapper button{
+    width:120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+   }
+
+   .container .box .wrapper span{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 70px;
+   }
+
+}
+
+
+
